@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Realistic Calculator</title>
+    <meta
+      name="description"
+      content="Realistic calculator using html , css and javascript"
+    />
+    <meta name="theme-color" content="#3d433d" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/calculator.css" />
+    <script
+      src="script/calculator.js"
+      defer
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="script/theme.js"
+      defer
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <div class="calculatorCont">
+      <div class="history">
+        History
+      </div>
+      <div class="historyList">
+        <ul class="lists"></ul>
+        <button class="clear">Clear History</button>
+      </div>
+      <span class="showTheme">
+        Change Theme
+        <span id="contTheme" class="themeCont">
+          <span class="default active">Default</span>
+          <span class="theme1">Linear</span>
+          <span class="theme2">Pink</span>
+          <span class="darktheme">Dark</span>
+        </span>
+      </span>
+      <div class="result">
+        <span id="resultId" class="resultInput" contenteditable>0</span>
+        <span class="msgScroll">Scroll Left</span>
+      </div>
+      <div class="key">
+        <button class="keyBtn" onclick="clearBtn('clearAll')">C</button>
+        <button class="keyBtn" onclick="clearBtn('clearOne')">&#x232B;</button>
+        <button class="keyBtn" onclick="oper('÷')">&divide;</button>
+        <button class="keyBtn" onclick="oper('×')">&times;</button>
+        <br />
+        <button class="keyBtn" onclick="science('cos')">cos</button>
+        <button class="keyBtn" onclick="science('tan')">tan</button>
+        <button class="keyBtn" onclick="science('sin')">sin</button>
+        <button class="keyBtn" onclick="science('pi')">π</button>
+        <br />
+        <button class="keyBtn" onclick="btn(this)">7</button>
+        <button class="keyBtn" onclick="btn(this)">8</button>
+        <button class="keyBtn" onclick="btn(this)">9</button>
+        <button class="keyBtn" onclick="oper('-')">-</button>
+        <br />
+        <button class="keyBtn" onclick="btn(this)">4</button>
+        <button class="keyBtn" onclick="btn(this)">5</button>
+        <button class="keyBtn" onclick="btn(this)">6</button>
+        <button class="keyBtn" onclick="oper('+')">&plus;</button>
+        <br />
+        <button class="keyBtn" onclick="btn(this)">1</button>
+        <button class="keyBtn" onclick="btn(this)">2</button>
+        <button class="keyBtn" onclick="btn(this)">3</button>
+        <button class="keyBtn" onclick="oper('squareroot')">√</button>
+        <br />
+        <button class="keyBtn" id="dotOp" onclick="dotSign()">.</button>
+        <button class="keyBtn" onclick="btn(this)">0</button>
+        <button class="keyBtn" onclick="oper('%')">%</button>
+        <button class="keyBtn" onclick="equal()">=</button>
+      </div>
+      <div class="footer">
+        <a href="https://github.com/darkcris1">
+          Cris
+          <img width="20" src="./images/github-logo.png" alt="Github Logo" />
+          2020
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
