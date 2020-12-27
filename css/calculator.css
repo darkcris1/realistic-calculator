@@ -38,7 +38,7 @@ body {
   border-bottom: 3px solid rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .calculatorCont {
   	transform: scale(0.8) translate(-62%,-30%);
   }

@@ -8,7 +8,8 @@ var answer = ''
 function playSound(e) {
   console.log(e.target.tagName)
   if (!(e.target.tagName === 'BUTTON')) return
-  const aud = new Audio('./click_effect.mp3')
+  const aud = new Audio('./click_effect.mp3');
+  aud.currentTime = 0.32;
   aud.play()
 }
 window.addEventListener('click', playSound)
