@@ -14,10 +14,8 @@ body {
     url('../images/calc-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .calculatorCont {
   display: flex;
@@ -25,11 +23,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   padding: 60px 0 10px 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
   background: var(--calculator-bg);
   width: 400px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+  	transform:translate(-50%,-20%);
   border-radius: 20px;
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   border-left: 2px solid rgba(255, 255, 255, 0.5);
@@ -39,12 +40,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .calculatorCont {
-    transform: scale(0.78);
-  }
-}
-@media screen and (max-width: 400px) {
-  .calculatorCont {
-    transform: scale(0.4);
+  	transform: scale(0.8) translate(-62%,-30%);
   }
 }
 .result {
