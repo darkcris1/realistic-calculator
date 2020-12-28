@@ -10,8 +10,7 @@ body {
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('../images/calc-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -30,7 +29,7 @@ body {
   background: var(--calculator-bg);
   width: 400px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
-  	transform:translate(-50%,-20%);
+  transform: translate(-50%, -20%);
   border-radius: 20px;
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   border-left: 2px solid rgba(255, 255, 255, 0.5);
@@ -40,7 +39,7 @@ body {
 }
 @media screen and (max-width: 450px) {
   .calculatorCont {
-  	transform: scale(0.8) translate(-62%,-30%);
+    transform: scale(0.8) translate(-62%, -30%);
   }
 }
 .result {
