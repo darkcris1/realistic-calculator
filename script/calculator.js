@@ -6,13 +6,13 @@ var dotOper = true
 var answer = ''
 
 function playSound(e) {
-  console.log(e.target.tagName)
   if (!(e.target.tagName === 'BUTTON')) return
-  const aud = new Audio('./click_effect.mp3');
-  aud.currentTime = 0.32;
+  const aud = new Audio('./click_effect.mp3')
+  aud.currentTime = 0.32
   aud.play()
 }
 window.addEventListener('click', playSound)
+
 function clearBtn(elem) {
   if (elem == 'clearAll') {
     resultInput.innerText = 0
@@ -87,12 +87,14 @@ function oper(op) {
     if (/(\+|-|÷|×)$/.test()) dotOper = true
   }
 }
+
 function dotSign() {
   if (dotOper) {
     resultInput.innerText += '.'
     dotOper = false
   }
 }
+
 function save() {
   localStorage.setItem(LOCAL_STORAGE_LIST_KEY, JSON.stringify(histories))
 }
