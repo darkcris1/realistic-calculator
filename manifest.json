@@ -1,0 +1,9 @@
+{
+  "name": "Realistic Calculator ",
+  "short_name": "Real Calc",
+  "theme_color": "#3d433d",
+  "background_color": "#3d433d",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
